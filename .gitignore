@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.log
+logs/
+*.tar
+*.zip
+codes/qa_5pattern/logs/qa_5pattern_qa_20260921_184159.log
+evaluation_analysis/stage2_data_html/cap_part1.html
+evaluation_analysis/stage2_data_html/qa_part1.html
+evaluation_analysis/stage2_data_html/qa_part2.html
+evaluation_analysis/bad_case_analysis/MMMU-Pro-COT_92B_Qwen_analysis.html

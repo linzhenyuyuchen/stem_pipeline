@@ -1,0 +1,1387 @@
+{
+  "version": "genre_label_v1.1",
+  "source": "D:\\Projects\\HTML_to_Cap\\artifacts\\faceted_genre_taxonomy_latest.html",
+  "id_policy": {
+    "l1": "GNR.xx",
+    "l2": "GNR.xx.yy",
+    "medium": "MED.xx",
+    "attribute": "ATTR.<name>",
+    "immutability": "published IDs are append-only and must not be reassigned"
+  },
+  "recommended_output": "most_specific_active_leaf",
+  "retired_ids": [
+    {
+      "id": "GNR.02.06",
+      "label": "绘画-其他绘画",
+      "retired_in": "genre_label_v1.1"
+    },
+    {
+      "id": "GNR.15.02",
+      "label": "仪器成像-声呐与雷达图",
+      "retired_in": "genre_label_v1.1"
+    }
+  ],
+  "forms": [
+    {
+      "id": "GNR.01",
+      "slug": "photo",
+      "label": "照片",
+      "taxonomy_label": "实景照片",
+      "definition": "照片式真实场景或实物图像,按场景与实物外观阅读。疑似 AI 生成的逼真图仍归 photo,不改判形态(R8)。本类的二级类是【题材层】,与 painting 按技法分的二级类不是同一种划分。 边界:二级类按【画面主体】判,不按拍摄环境判 —— 裁掉它照片就不成立的那个对象即为主体;并列时取占画面主要面积、居视觉中心、或被光照与构图突出的一个。例:室内拍摄的设备或产品,主体是器物,归物品与静物,不归建筑与场所;人物出现在街景中但非画面重点的,归建筑与场所。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.01.01",
+          "label": "人物与肖像",
+          "leaf_label": "照片-人物与肖像",
+          "definition": "以人物为主体。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.01.02",
+          "label": "风景与自然",
+          "leaf_label": "照片-风景与自然",
+          "definition": "自然景观为主体。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.01.03",
+          "label": "建筑与场所",
+          "leaf_label": "照片-建筑与场所",
+          "definition": "建筑外观、城市街景,或室内空间与场所本身为主体。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.01.04",
+          "label": "动物与植物",
+          "leaf_label": "照片-动物与植物",
+          "definition": "动物或植物为主体。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.01.05",
+          "label": "物品与静物",
+          "leaf_label": "照片-物品与静物",
+          "definition": "产品、器物、静物,以及实拍的雕塑、文物或展品。 边界:CG 质感归 render3d;存疑时按媒介证据定。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.01.06",
+          "label": "其他照片",
+          "leaf_label": "照片-其他照片",
+          "definition": "符合照片定义但不属于以上题材。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.02",
+      "slug": "painting",
+      "label": "绘画",
+      "taxonomy_label": "绘画",
+      "definition": "以人工绘制的线条、笔触或色彩构成主体画面,按画面本身的形体与内容阅读。靠元件连线读语义的归 diagram,带规范尺寸比例图例的归 blueprint,书页或文档内插画仍随完整页面归 document。 边界:本类的二级类是【技法层】,与 photo 按题材分的二级类不是同一种划分,且来自多个划分标准。同时命中多个二级类时按此顺序取:草图与设计稿 > 书法 > 水墨与工笔 > 传统媒材绘画 > 数字插画。例:数字绘制的概念草图 -> 草图与设计稿;数位板画的水墨风作品 -> 水墨与工笔。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.02.01",
+          "label": "传统媒材绘画",
+          "leaf_label": "绘画-传统媒材绘画",
+          "definition": "油画、丙烯、水彩、水粉、素描、炭笔、粉彩、版画等传统媒材的完成作品。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.02.02",
+          "label": "水墨与工笔",
+          "leaf_label": "绘画-水墨与工笔",
+          "definition": "中国画体系。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.02.03",
+          "label": "书法",
+          "leaf_label": "绘画-书法",
+          "definition": "以书写艺术为欣赏对象。 边界:读内容为主归 document > 手写文稿与笔记;单字字形展示归 symbol > 其他符号。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.02.04",
+          "label": "数字插画",
+          "leaf_label": "绘画-数字插画",
+          "definition": "数字绘制的插画,含数位板手绘与像素风作品。 边界:带 HUD 或控件的游戏画面归 ui > 游戏界面。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.02.05",
+          "label": "草图与设计稿",
+          "leaf_label": "绘画-草图与设计稿",
+          "definition": "徒手或非正式的概念草图、产品与建筑设计探索稿,以完成度低、线条探索性为特征。 边界:规范制图归 blueprint;徒手画的流程图、结构示意仍按读法归 diagram;艺术素描成品归传统媒材绘画。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.03",
+      "slug": "render3d",
+      "label": "三维渲染",
+      "taxonomy_label": "三维渲染",
+      "definition": "具有明确 CG 材质、光照和三维建模痕迹的渲染成品。实拍雕塑归 photo。本类的二级类是【题材层】。 边界:二级类的主体判定同 photo:按画面主体判,不按场景判。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.03.01",
+          "label": "产品渲染",
+          "leaf_label": "三维渲染-产品渲染",
+          "definition": "产品效果图。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.03.02",
+          "label": "建筑与室内渲染",
+          "leaf_label": "三维渲染-建筑与室内渲染",
+          "definition": "建筑或室内效果图。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.03.03",
+          "label": "其他渲染",
+          "leaf_label": "三维渲染-其他渲染",
+          "definition": "其他 CG 渲染或三维模型视口图。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.04",
+      "slug": "diagram",
+      "label": "示意图",
+      "taxonomy_label": "示意图",
+      "definition": "靠识别元件、节点、箭头与连线的语义来读的图,表达结构、流程、关系或工作原理。完整文档中的内嵌示意图仍随页面归 document。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.04.01",
+          "label": "标注结构图",
+          "leaf_label": "示意图-标注结构图",
+          "definition": "实物、器官或装置的插画配引线和部件标注,含沿装配轴分解展开的爆炸图。 边界:实拍影像上做标注仍按 R1 判底图形态;解剖插画归此类,解剖实拍归 medimg 或 photo。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.04.02",
+          "label": "电路图",
+          "leaf_label": "示意图-电路图",
+          "definition": "电路元件符号与连接线构成的原理图或接线图。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.04.03",
+          "label": "流程与工作流图",
+          "leaf_label": "示意图-流程与工作流图",
+          "definition": "步骤节点加箭头表达过程,含水循环、生命周期这类闭环流程。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.04.04",
+          "label": "关系与层级图",
+          "leaf_label": "示意图-关系与层级图",
+          "definition": "实体节点与关系连线构成的网络(知识图谱、社交网络),以及树状层级、组织架构、分类树、家谱。 边界:面积编码的 treemap 归 chart > 其他函数图与统计图。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.04.05",
+          "label": "时间轴",
+          "leaf_label": "示意图-时间轴",
+          "definition": "以明确时间刻度为主轴组织事件的单幅图。 边界:无时间刻度的步骤顺序归流程与工作流图;多面板的阶段演变按主形态判并设 is_multipanel(R5)。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.04.06",
+          "label": "其他示意图",
+          "leaf_label": "示意图-其他示意图",
+          "definition": "符合示意图定义但不属于以上类型。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.05",
+      "slug": "chart",
+      "label": "函数图与统计图",
+      "taxonomy_label": "函数图与统计图",
+      "definition": "靠坐标、数值或图形编码读取定量关系的图,含统计图、函数曲线和仪器输出的坐标波形。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.05.01",
+          "label": "柱状与条形图",
+          "leaf_label": "函数图与统计图-柱状与条形图",
+          "definition": "以矩形长度编码数值,含堆叠、分组。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.05.02",
+          "label": "折线与面积图",
+          "leaf_label": "函数图与统计图-折线与面积图",
+          "definition": "以点和连线表达趋势,含折线下方或区间的面积填充与堆叠面积。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.05.03",
+          "label": "散点与气泡图",
+          "leaf_label": "函数图与统计图-散点与气泡图",
+          "definition": "点的位置及可选大小编码变量。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.05.04",
+          "label": "饼图与环形图",
+          "leaf_label": "函数图与统计图-饼图与环形图",
+          "definition": "扇形角度编码占比。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.05.05",
+          "label": "雷达图",
+          "leaf_label": "函数图与统计图-雷达图",
+          "definition": "径向多维数值图。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.05.06",
+          "label": "坐标系函数图",
+          "leaf_label": "函数图与统计图-坐标系函数图",
+          "definition": "数学函数曲线或数值解析图。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.05.07",
+          "label": "谱图与波形图",
+          "leaf_label": "函数图与统计图-谱图与波形图",
+          "definition": "NMR、质谱、色谱、光谱、心电、脑电等仪器输出的坐标波形。 边界:虽出自医疗或科研仪器,但读法是坐标与峰形,不进 medimg / instrument(R6)。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.05.08",
+          "label": "其他函数图与统计图",
+          "leaf_label": "函数图与统计图-其他函数图与统计图",
+          "definition": "符合 chart 定义但不属于以上类型,含金融 K 线与行情图、桑基图与定量流向图、矩形树图(treemap)等低频图种。 边界:地理底图上的流向归 map > 专题地图。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.06",
+      "slug": "table",
+      "label": "表格",
+      "taxonomy_label": "表格",
+      "definition": "已单独裁出、主要靠行列交叉定位读取的结构化数据或文字,课程表、日历、赛程表均算。完整文档中的表格仍随页面归 document。(无二级) 边界:有坐标轴或图形编码归 chart;整页待填表单归 document > 表单与申请页。「已单独裁出」的判据:画面上除表格外没有页眉页脚、标题层级或成段正文;出现其中任何一项即归 document。",
+      "active_in_classifier": true,
+      "children": []
+    },
+    {
+      "id": "GNR.07",
+      "slug": "map",
+      "label": "地图",
+      "taxonomy_label": "地图",
+      "definition": "以地理空间为主要参照系、位置具有地理意义的独立图。实拍环境中作为物体出现的地图仍归 photo。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.07.01",
+          "label": "政区与地形图",
+          "leaf_label": "地图-政区与地形图",
+          "definition": "以行政边界和地名为主,或以等高线、晕渲、分层设色表达地貌。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.07.02",
+          "label": "道路与交通线路图",
+          "leaf_label": "地图-道路与交通线路图",
+          "definition": "道路、铁路、公交、航海或航空线路网络。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.07.03",
+          "label": "专题地图",
+          "leaf_label": "地图-专题地图",
+          "definition": "在地理底图上编码统计值或专题要素。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.07.04",
+          "label": "其他地图",
+          "leaf_label": "地图-其他地图",
+          "definition": "符合地图定义但不属于以上类型,含场馆、园区或楼层的找路导览平面图。 边界:施工或结构视角归 blueprint;无制图要素的卫星影像归 instrument > 卫星遥感图。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.08",
+      "slug": "document",
+      "label": "文档",
+      "taxonomy_label": "文档",
+      "definition": "具有页面或文章版式,需要按正文与版面整体阅读的内容。页内嵌的图表、照片、代码或表格不改变一级类(R2)。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.08.01",
+          "label": "书籍内页",
+          "leaf_label": "文档-书籍内页",
+          "definition": "书籍目录或者正文页面。边界：书籍封面属于poster。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.08.02",
+          "label": "文章、报告与论文页",
+          "leaf_label": "文档-文章、报告与论文页",
+          "definition": "文章、报告、论文、README 等页面。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.08.03",
+          "label": "手写文稿与笔记",
+          "leaf_label": "文档-手写文稿与笔记",
+          "definition": "以阅读手写内容为主。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.08.04",
+          "label": "表单与申请页",
+          "leaf_label": "文档-表单与申请页",
+          "definition": "待填写或已填写的表单。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.08.05",
+          "label": "试卷与练习",
+          "leaf_label": "文档-试卷与练习",
+          "definition": "试卷或习题页。 边界:单题图形紧裁按图形本身判(geometry / chart 等);整页版式归此类。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.08.06",
+          "label": "幻灯片单页",
+          "leaf_label": "文档-幻灯片单页",
+          "definition": "演示文稿单页。 边界:宣传版式归 poster。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.08.07",
+          "label": "证书与证明",
+          "leaf_label": "文档-证书与证明",
+          "definition": "证书、奖状或证明文件。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.08.08",
+          "label": "身份与旅行证件",
+          "leaf_label": "文档-身份与旅行证件",
+          "definition": "身份证、护照、签证、驾照等可识别个人身份的证件。 边界:本类涉及个人隐私,单列以便下游隔离处理,不与「证书与证明」合并。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.08.09",
+          "label": "其他文档",
+          "leaf_label": "文档-其他文档",
+          "definition": "符合文档定义但不属于以上版式,含书信、备忘录与函件。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.09",
+      "slug": "code",
+      "label": "源代码",
+      "taxonomy_label": "源代码",
+      "definition": "以成篇代码及其语法、控制流为主要阅读对象。(无二级) 边界:成篇文章、教材或幻灯片里嵌代码块、任务是读文章归 document;孤立记号特写归 symbol。裁决:把代码抠掉题目不成立则归此类。",
+      "active_in_classifier": true,
+      "children": []
+    },
+    {
+      "id": "GNR.10",
+      "slug": "ui",
+      "label": "界面",
+      "taxonomy_label": "界面",
+      "definition": "以网页或软件的导航结构、窗口和交互控件本身为理解重点的完整界面截图。只是用截图承载内容的按 R1 判内容形态。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.10.01",
+          "label": "通用网页界面",
+          "leaf_label": "界面-通用网页界面",
+          "definition": "浏览器网页。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.10.02",
+          "label": "移动应用界面",
+          "leaf_label": "界面-移动应用界面",
+          "definition": "手机或平板 App 界面。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.10.03",
+          "label": "桌面软件界面",
+          "leaf_label": "界面-桌面软件界面",
+          "definition": "桌面应用或操作系统界面。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.10.04",
+          "label": "游戏界面",
+          "leaf_label": "界面-游戏界面",
+          "definition": "带 HUD 或控件的游戏画面。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.10.05",
+          "label": "其他界面",
+          "leaf_label": "界面-其他界面",
+          "definition": "其他交互界面。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.11",
+      "slug": "symbol",
+      "label": "符号",
+      "taxonomy_label": "符号",
+      "definition": "以独立符号、标记、公式、标识或单字形为主体,而非成篇文字或完整页面。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.11.01",
+          "label": "数学公式与记号",
+          "leaf_label": "符号-数学公式与记号",
+          "definition": "独立的数学表达式或记号。 边界:整页推导过程归 document;单个或少量式子为主体归此类。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.11.02",
+          "label": "化学式与结构式",
+          "leaf_label": "符号-化学式与结构式",
+          "definition": "分子式、结构式或反应式。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.11.03",
+          "label": "生物序列与比对",
+          "leaf_label": "符号-生物序列与比对",
+          "definition": "DNA、RNA 或蛋白质序列及比对。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.11.04",
+          "label": "标识与图标",
+          "leaf_label": "符号-标识与图标",
+          "definition": "品牌或机构标志、UI 图标与功能符号。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.11.05",
+          "label": "公共标志与标识牌",
+          "leaf_label": "符号-公共标志与标识牌",
+          "definition": "交通、安全或公共场所的标识牌。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.11.06",
+          "label": "其他符号",
+          "leaf_label": "符号-其他符号",
+          "definition": "符合符号定义但不属于以上类型,含单字符与字形样张、二维码与条码。 边界:艺术欣赏语境的书写归 painting > 书法。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.12",
+      "slug": "geometry",
+      "label": "几何图形",
+      "taxonomy_label": "几何图形",
+      "definition": "几何题式的抽象点、线、面图形,靠图形关系求解。(无二级) 边界:表达实物结构归 diagram;整页试卷归 document > 试卷与练习,单题紧裁归此类。画在坐标系里、需要读坐标或函数关系的解析几何题归 chart > 坐标系函数图;不依赖坐标读数、只看图形关系的归此类。",
+      "active_in_classifier": true,
+      "children": []
+    },
+    {
+      "id": "GNR.13",
+      "slug": "micrograph",
+      "label": "显微图",
+      "taxonomy_label": "显微图",
+      "definition": "由显微镜形成的微观尺度图像。病理组织切片归此类,不归一般医学影像(R7)。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.13.01",
+          "label": "光学显微图",
+          "leaf_label": "显微图-光学显微图",
+          "definition": "普通光学显微镜成像。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.13.02",
+          "label": "电子显微图",
+          "leaf_label": "显微图-电子显微图",
+          "definition": "SEM 或 TEM 成像。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.13.03",
+          "label": "荧光显微图",
+          "leaf_label": "显微图-荧光显微图",
+          "definition": "荧光标记或共聚焦成像。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.13.04",
+          "label": "病理切片",
+          "leaf_label": "显微图-病理切片",
+          "definition": "染色组织病理切片。 边界:人体断层或投影成像(X 光、CT、MRI、超声)归 medimg。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.13.05",
+          "label": "其他显微图",
+          "leaf_label": "显微图-其他显微图",
+          "definition": "其他显微成像。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.14",
+      "slug": "medimg",
+      "label": "医学影像",
+      "taxonomy_label": "医学影像",
+      "definition": "人体或生物体内部的临床医学成像。显微病理切片归 micrograph,心电等坐标波形归 chart。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.14.01",
+          "label": "X光影像",
+          "leaf_label": "医学影像-X光影像",
+          "definition": "X 射线投影成像。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.14.02",
+          "label": "CT与MRI",
+          "leaf_label": "医学影像-CT与MRI",
+          "definition": "CT 或 MRI 断层成像。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.14.03",
+          "label": "超声影像",
+          "leaf_label": "医学影像-超声影像",
+          "definition": "超声成像。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.14.04",
+          "label": "其他医学影像",
+          "leaf_label": "医学影像-其他医学影像",
+          "definition": "内窥镜、眼底、PET 等其他医学成像。 边界:心电、脑电波形归 chart > 谱图与波形图(R6)。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.15",
+      "slug": "instrument",
+      "label": "仪器成像",
+      "taxonomy_label": "仪器成像",
+      "definition": "非医学的特殊传感器或观测仪器形成的图像。带坐标的波形和谱图归 chart。",
+      "active_in_classifier": true,
+      "children": [
+        {
+          "id": "GNR.15.01",
+          "label": "热成像图",
+          "leaf_label": "仪器成像-热成像图",
+          "definition": "红外热像。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.15.03",
+          "label": "卫星遥感图",
+          "leaf_label": "仪器成像-卫星遥感图",
+          "definition": "卫星或航拍遥感影像。 边界:叠加图例、边界、注记等制图要素则归 map。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.15.04",
+          "label": "天文观测图",
+          "leaf_label": "仪器成像-天文观测图",
+          "definition": "望远镜天文观测成像。",
+          "active_in_classifier": true
+        },
+        {
+          "id": "GNR.15.05",
+          "label": "其他仪器成像",
+          "leaf_label": "仪器成像-其他仪器成像",
+          "definition": "其他非医学传感器成像。",
+          "active_in_classifier": true
+        }
+      ]
+    },
+    {
+      "id": "GNR.16",
+      "slug": "poster",
+      "label": "海报、封面与广告",
+      "taxonomy_label": "海报、封面与广告",
+      "definition": "自足的宣传、促销、活动、封面或主视觉设计版面。照片作背景不使其成为 photo。(无二级) 边界:传达数据、步骤或知识为主归 infographic(R10);演示版式归 document > 幻灯片单页。",
+      "active_in_classifier": true,
+      "children": []
+    },
+    {
+      "id": "GNR.17",
+      "slug": "infographic",
+      "label": "信息图",
+      "taxonomy_label": "信息图",
+      "definition": "以短文本模块配图表、图标或插画,系统讲解数据、步骤或知识的自足版面。(无二级) 边界:连续正文主导归 document;宣传促销主导归 poster(R10);单一图表无混排归 chart。",
+      "active_in_classifier": true,
+      "children": []
+    },
+    {
+      "id": "GNR.18",
+      "slug": "meme",
+      "label": "表情包与梗图",
+      "taxonomy_label": "表情包与梗图",
+      "definition": "为聊天或网络传播而二次加工的图像:画面上叠有描边字幕、吐槽文字、贴纸、emoji、表情符号或装饰特效等明显的加工层。情绪可以是搞笑、讽刺、卖萌、无语等任意一种,不要求构成笑点或反差。按画面元素判,不猜制作意图。(无二级) 边界:优先于 comic 和 photo(R9);无加工层的叙事分格归 comic;只有普通说明文字、影视原生字幕或水印的不算 —— 加工层必须是明显的二次叠加。",
+      "active_in_classifier": true,
+      "children": []
+    },
+    {
+      "id": "GNR.19",
+      "slug": "comic",
+      "label": "漫画",
+      "taxonomy_label": "漫画",
+      "definition": "以绘制角色和叙事分格表达故事的漫画。(无二级) 边界:带梗文字的传播用合成图归 meme(R9)。漫画的叙事分格共享同一页面版面,is_multipanel = false;彼此独立成图、不共享版面的分步教程图才置 true(R3)。",
+      "active_in_classifier": true,
+      "children": []
+    },
+    {
+      "id": "GNR.20",
+      "slug": "sheetmusic",
+      "label": "乐谱",
+      "taxonomy_label": "乐谱",
+      "definition": "以音乐记谱符号为主要内容,五线谱、简谱、六线谱、鼓谱均算。(无二级) 边界:手写乐谱仍归此类 —— 与 document > 手写文稿与笔记 的区别是主体为记谱符号而非文字;印在完整书页版式里的乐谱随页面归 document。",
+      "active_in_classifier": true,
+      "children": []
+    },
+    {
+      "id": "GNR.21",
+      "slug": "blueprint",
+      "label": "工程图纸",
+      "taxonomy_label": "工程图纸",
+      "definition": "带规范尺寸、比例、图例或制图投影的建筑、机械或工程图纸。(无二级) 边界:徒手非正式归 painting > 草图与设计稿;找路导览视角归 map > 平面导览图。",
+      "active_in_classifier": true,
+      "children": []
+    },
+    {
+      "id": "GNR.22",
+      "slug": "other",
+      "label": "其他",
+      "taxonomy_label": "其他",
+      "definition": "确实无法归入以上任何形态的兜底类,不应作为不确定时的随意选择。入待扩充队列(R12)。(无二级)",
+      "active_in_classifier": true,
+      "children": []
+    }
+  ],
+  "classifier_mapping": {
+    "l1": {
+      "photo": {
+        "id": "GNR.01",
+        "label": "照片",
+        "taxonomy_label": "实景照片"
+      },
+      "painting": {
+        "id": "GNR.02",
+        "label": "绘画",
+        "taxonomy_label": "绘画"
+      },
+      "render3d": {
+        "id": "GNR.03",
+        "label": "三维渲染",
+        "taxonomy_label": "三维渲染"
+      },
+      "diagram": {
+        "id": "GNR.04",
+        "label": "示意图",
+        "taxonomy_label": "示意图"
+      },
+      "chart": {
+        "id": "GNR.05",
+        "label": "函数图与统计图",
+        "taxonomy_label": "函数图与统计图"
+      },
+      "table": {
+        "id": "GNR.06",
+        "label": "表格",
+        "taxonomy_label": "表格"
+      },
+      "map": {
+        "id": "GNR.07",
+        "label": "地图",
+        "taxonomy_label": "地图"
+      },
+      "document": {
+        "id": "GNR.08",
+        "label": "文档",
+        "taxonomy_label": "文档"
+      },
+      "code": {
+        "id": "GNR.09",
+        "label": "源代码",
+        "taxonomy_label": "源代码"
+      },
+      "ui": {
+        "id": "GNR.10",
+        "label": "界面",
+        "taxonomy_label": "界面"
+      },
+      "symbol": {
+        "id": "GNR.11",
+        "label": "符号",
+        "taxonomy_label": "符号"
+      },
+      "geometry": {
+        "id": "GNR.12",
+        "label": "几何图形",
+        "taxonomy_label": "几何图形"
+      },
+      "micrograph": {
+        "id": "GNR.13",
+        "label": "显微图",
+        "taxonomy_label": "显微图"
+      },
+      "medimg": {
+        "id": "GNR.14",
+        "label": "医学影像",
+        "taxonomy_label": "医学影像"
+      },
+      "instrument": {
+        "id": "GNR.15",
+        "label": "仪器成像",
+        "taxonomy_label": "仪器成像"
+      },
+      "poster": {
+        "id": "GNR.16",
+        "label": "海报、封面与广告",
+        "taxonomy_label": "海报、封面与广告"
+      },
+      "infographic": {
+        "id": "GNR.17",
+        "label": "信息图",
+        "taxonomy_label": "信息图"
+      },
+      "meme": {
+        "id": "GNR.18",
+        "label": "表情包与梗图",
+        "taxonomy_label": "表情包与梗图"
+      },
+      "comic": {
+        "id": "GNR.19",
+        "label": "漫画",
+        "taxonomy_label": "漫画"
+      },
+      "sheetmusic": {
+        "id": "GNR.20",
+        "label": "乐谱",
+        "taxonomy_label": "乐谱"
+      },
+      "blueprint": {
+        "id": "GNR.21",
+        "label": "工程图纸",
+        "taxonomy_label": "工程图纸"
+      },
+      "other": {
+        "id": "GNR.22",
+        "label": "其他",
+        "taxonomy_label": "其他"
+      }
+    },
+    "l2": {
+      "人物与肖像": {
+        "id": "GNR.01.01",
+        "label": "照片-人物与肖像",
+        "parent_id": "GNR.01",
+        "parent_slug": "photo",
+        "form_l2": "人物与肖像"
+      },
+      "风景与自然": {
+        "id": "GNR.01.02",
+        "label": "照片-风景与自然",
+        "parent_id": "GNR.01",
+        "parent_slug": "photo",
+        "form_l2": "风景与自然"
+      },
+      "建筑与场所": {
+        "id": "GNR.01.03",
+        "label": "照片-建筑与场所",
+        "parent_id": "GNR.01",
+        "parent_slug": "photo",
+        "form_l2": "建筑与场所"
+      },
+      "动物与植物": {
+        "id": "GNR.01.04",
+        "label": "照片-动物与植物",
+        "parent_id": "GNR.01",
+        "parent_slug": "photo",
+        "form_l2": "动物与植物"
+      },
+      "物品与静物": {
+        "id": "GNR.01.05",
+        "label": "照片-物品与静物",
+        "parent_id": "GNR.01",
+        "parent_slug": "photo",
+        "form_l2": "物品与静物"
+      },
+      "其他照片": {
+        "id": "GNR.01.06",
+        "label": "照片-其他照片",
+        "parent_id": "GNR.01",
+        "parent_slug": "photo",
+        "form_l2": "其他照片"
+      },
+      "传统媒材绘画": {
+        "id": "GNR.02.01",
+        "label": "绘画-传统媒材绘画",
+        "parent_id": "GNR.02",
+        "parent_slug": "painting",
+        "form_l2": "传统媒材绘画"
+      },
+      "水墨与工笔": {
+        "id": "GNR.02.02",
+        "label": "绘画-水墨与工笔",
+        "parent_id": "GNR.02",
+        "parent_slug": "painting",
+        "form_l2": "水墨与工笔"
+      },
+      "书法": {
+        "id": "GNR.02.03",
+        "label": "绘画-书法",
+        "parent_id": "GNR.02",
+        "parent_slug": "painting",
+        "form_l2": "书法"
+      },
+      "数字插画": {
+        "id": "GNR.02.04",
+        "label": "绘画-数字插画",
+        "parent_id": "GNR.02",
+        "parent_slug": "painting",
+        "form_l2": "数字插画"
+      },
+      "草图与设计稿": {
+        "id": "GNR.02.05",
+        "label": "绘画-草图与设计稿",
+        "parent_id": "GNR.02",
+        "parent_slug": "painting",
+        "form_l2": "草图与设计稿"
+      },
+      "产品渲染": {
+        "id": "GNR.03.01",
+        "label": "三维渲染-产品渲染",
+        "parent_id": "GNR.03",
+        "parent_slug": "render3d",
+        "form_l2": "产品渲染"
+      },
+      "建筑与室内渲染": {
+        "id": "GNR.03.02",
+        "label": "三维渲染-建筑与室内渲染",
+        "parent_id": "GNR.03",
+        "parent_slug": "render3d",
+        "form_l2": "建筑与室内渲染"
+      },
+      "其他渲染": {
+        "id": "GNR.03.03",
+        "label": "三维渲染-其他渲染",
+        "parent_id": "GNR.03",
+        "parent_slug": "render3d",
+        "form_l2": "其他渲染"
+      },
+      "标注结构图": {
+        "id": "GNR.04.01",
+        "label": "示意图-标注结构图",
+        "parent_id": "GNR.04",
+        "parent_slug": "diagram",
+        "form_l2": "标注结构图"
+      },
+      "电路图": {
+        "id": "GNR.04.02",
+        "label": "示意图-电路图",
+        "parent_id": "GNR.04",
+        "parent_slug": "diagram",
+        "form_l2": "电路图"
+      },
+      "流程与工作流图": {
+        "id": "GNR.04.03",
+        "label": "示意图-流程与工作流图",
+        "parent_id": "GNR.04",
+        "parent_slug": "diagram",
+        "form_l2": "流程与工作流图"
+      },
+      "关系与层级图": {
+        "id": "GNR.04.04",
+        "label": "示意图-关系与层级图",
+        "parent_id": "GNR.04",
+        "parent_slug": "diagram",
+        "form_l2": "关系与层级图"
+      },
+      "时间轴": {
+        "id": "GNR.04.05",
+        "label": "示意图-时间轴",
+        "parent_id": "GNR.04",
+        "parent_slug": "diagram",
+        "form_l2": "时间轴"
+      },
+      "其他示意图": {
+        "id": "GNR.04.06",
+        "label": "示意图-其他示意图",
+        "parent_id": "GNR.04",
+        "parent_slug": "diagram",
+        "form_l2": "其他示意图"
+      },
+      "柱状与条形图": {
+        "id": "GNR.05.01",
+        "label": "函数图与统计图-柱状与条形图",
+        "parent_id": "GNR.05",
+        "parent_slug": "chart",
+        "form_l2": "柱状与条形图"
+      },
+      "折线与面积图": {
+        "id": "GNR.05.02",
+        "label": "函数图与统计图-折线与面积图",
+        "parent_id": "GNR.05",
+        "parent_slug": "chart",
+        "form_l2": "折线与面积图"
+      },
+      "散点与气泡图": {
+        "id": "GNR.05.03",
+        "label": "函数图与统计图-散点与气泡图",
+        "parent_id": "GNR.05",
+        "parent_slug": "chart",
+        "form_l2": "散点与气泡图"
+      },
+      "饼图与环形图": {
+        "id": "GNR.05.04",
+        "label": "函数图与统计图-饼图与环形图",
+        "parent_id": "GNR.05",
+        "parent_slug": "chart",
+        "form_l2": "饼图与环形图"
+      },
+      "雷达图": {
+        "id": "GNR.05.05",
+        "label": "函数图与统计图-雷达图",
+        "parent_id": "GNR.05",
+        "parent_slug": "chart",
+        "form_l2": "雷达图"
+      },
+      "坐标系函数图": {
+        "id": "GNR.05.06",
+        "label": "函数图与统计图-坐标系函数图",
+        "parent_id": "GNR.05",
+        "parent_slug": "chart",
+        "form_l2": "坐标系函数图"
+      },
+      "谱图与波形图": {
+        "id": "GNR.05.07",
+        "label": "函数图与统计图-谱图与波形图",
+        "parent_id": "GNR.05",
+        "parent_slug": "chart",
+        "form_l2": "谱图与波形图"
+      },
+      "其他函数图与统计图": {
+        "id": "GNR.05.08",
+        "label": "函数图与统计图-其他函数图与统计图",
+        "parent_id": "GNR.05",
+        "parent_slug": "chart",
+        "form_l2": "其他函数图与统计图"
+      },
+      "政区与地形图": {
+        "id": "GNR.07.01",
+        "label": "地图-政区与地形图",
+        "parent_id": "GNR.07",
+        "parent_slug": "map",
+        "form_l2": "政区与地形图"
+      },
+      "道路与交通线路图": {
+        "id": "GNR.07.02",
+        "label": "地图-道路与交通线路图",
+        "parent_id": "GNR.07",
+        "parent_slug": "map",
+        "form_l2": "道路与交通线路图"
+      },
+      "专题地图": {
+        "id": "GNR.07.03",
+        "label": "地图-专题地图",
+        "parent_id": "GNR.07",
+        "parent_slug": "map",
+        "form_l2": "专题地图"
+      },
+      "其他地图": {
+        "id": "GNR.07.04",
+        "label": "地图-其他地图",
+        "parent_id": "GNR.07",
+        "parent_slug": "map",
+        "form_l2": "其他地图"
+      },
+      "书籍内页": {
+        "id": "GNR.08.01",
+        "label": "文档-书籍内页",
+        "parent_id": "GNR.08",
+        "parent_slug": "document",
+        "form_l2": "书籍内页"
+      },
+      "文章、报告与论文页": {
+        "id": "GNR.08.02",
+        "label": "文档-文章、报告与论文页",
+        "parent_id": "GNR.08",
+        "parent_slug": "document",
+        "form_l2": "文章、报告与论文页"
+      },
+      "手写文稿与笔记": {
+        "id": "GNR.08.03",
+        "label": "文档-手写文稿与笔记",
+        "parent_id": "GNR.08",
+        "parent_slug": "document",
+        "form_l2": "手写文稿与笔记"
+      },
+      "表单与申请页": {
+        "id": "GNR.08.04",
+        "label": "文档-表单与申请页",
+        "parent_id": "GNR.08",
+        "parent_slug": "document",
+        "form_l2": "表单与申请页"
+      },
+      "试卷与练习": {
+        "id": "GNR.08.05",
+        "label": "文档-试卷与练习",
+        "parent_id": "GNR.08",
+        "parent_slug": "document",
+        "form_l2": "试卷与练习"
+      },
+      "幻灯片单页": {
+        "id": "GNR.08.06",
+        "label": "文档-幻灯片单页",
+        "parent_id": "GNR.08",
+        "parent_slug": "document",
+        "form_l2": "幻灯片单页"
+      },
+      "证书与证明": {
+        "id": "GNR.08.07",
+        "label": "文档-证书与证明",
+        "parent_id": "GNR.08",
+        "parent_slug": "document",
+        "form_l2": "证书与证明"
+      },
+      "身份与旅行证件": {
+        "id": "GNR.08.08",
+        "label": "文档-身份与旅行证件",
+        "parent_id": "GNR.08",
+        "parent_slug": "document",
+        "form_l2": "身份与旅行证件"
+      },
+      "其他文档": {
+        "id": "GNR.08.09",
+        "label": "文档-其他文档",
+        "parent_id": "GNR.08",
+        "parent_slug": "document",
+        "form_l2": "其他文档"
+      },
+      "通用网页界面": {
+        "id": "GNR.10.01",
+        "label": "界面-通用网页界面",
+        "parent_id": "GNR.10",
+        "parent_slug": "ui",
+        "form_l2": "通用网页界面"
+      },
+      "移动应用界面": {
+        "id": "GNR.10.02",
+        "label": "界面-移动应用界面",
+        "parent_id": "GNR.10",
+        "parent_slug": "ui",
+        "form_l2": "移动应用界面"
+      },
+      "桌面软件界面": {
+        "id": "GNR.10.03",
+        "label": "界面-桌面软件界面",
+        "parent_id": "GNR.10",
+        "parent_slug": "ui",
+        "form_l2": "桌面软件界面"
+      },
+      "游戏界面": {
+        "id": "GNR.10.04",
+        "label": "界面-游戏界面",
+        "parent_id": "GNR.10",
+        "parent_slug": "ui",
+        "form_l2": "游戏界面"
+      },
+      "其他界面": {
+        "id": "GNR.10.05",
+        "label": "界面-其他界面",
+        "parent_id": "GNR.10",
+        "parent_slug": "ui",
+        "form_l2": "其他界面"
+      },
+      "数学公式与记号": {
+        "id": "GNR.11.01",
+        "label": "符号-数学公式与记号",
+        "parent_id": "GNR.11",
+        "parent_slug": "symbol",
+        "form_l2": "数学公式与记号"
+      },
+      "化学式与结构式": {
+        "id": "GNR.11.02",
+        "label": "符号-化学式与结构式",
+        "parent_id": "GNR.11",
+        "parent_slug": "symbol",
+        "form_l2": "化学式与结构式"
+      },
+      "生物序列与比对": {
+        "id": "GNR.11.03",
+        "label": "符号-生物序列与比对",
+        "parent_id": "GNR.11",
+        "parent_slug": "symbol",
+        "form_l2": "生物序列与比对"
+      },
+      "标识与图标": {
+        "id": "GNR.11.04",
+        "label": "符号-标识与图标",
+        "parent_id": "GNR.11",
+        "parent_slug": "symbol",
+        "form_l2": "标识与图标"
+      },
+      "公共标志与标识牌": {
+        "id": "GNR.11.05",
+        "label": "符号-公共标志与标识牌",
+        "parent_id": "GNR.11",
+        "parent_slug": "symbol",
+        "form_l2": "公共标志与标识牌"
+      },
+      "其他符号": {
+        "id": "GNR.11.06",
+        "label": "符号-其他符号",
+        "parent_id": "GNR.11",
+        "parent_slug": "symbol",
+        "form_l2": "其他符号"
+      },
+      "光学显微图": {
+        "id": "GNR.13.01",
+        "label": "显微图-光学显微图",
+        "parent_id": "GNR.13",
+        "parent_slug": "micrograph",
+        "form_l2": "光学显微图"
+      },
+      "电子显微图": {
+        "id": "GNR.13.02",
+        "label": "显微图-电子显微图",
+        "parent_id": "GNR.13",
+        "parent_slug": "micrograph",
+        "form_l2": "电子显微图"
+      },
+      "荧光显微图": {
+        "id": "GNR.13.03",
+        "label": "显微图-荧光显微图",
+        "parent_id": "GNR.13",
+        "parent_slug": "micrograph",
+        "form_l2": "荧光显微图"
+      },
+      "病理切片": {
+        "id": "GNR.13.04",
+        "label": "显微图-病理切片",
+        "parent_id": "GNR.13",
+        "parent_slug": "micrograph",
+        "form_l2": "病理切片"
+      },
+      "其他显微图": {
+        "id": "GNR.13.05",
+        "label": "显微图-其他显微图",
+        "parent_id": "GNR.13",
+        "parent_slug": "micrograph",
+        "form_l2": "其他显微图"
+      },
+      "X光影像": {
+        "id": "GNR.14.01",
+        "label": "医学影像-X光影像",
+        "parent_id": "GNR.14",
+        "parent_slug": "medimg",
+        "form_l2": "X光影像"
+      },
+      "CT与MRI": {
+        "id": "GNR.14.02",
+        "label": "医学影像-CT与MRI",
+        "parent_id": "GNR.14",
+        "parent_slug": "medimg",
+        "form_l2": "CT与MRI"
+      },
+      "超声影像": {
+        "id": "GNR.14.03",
+        "label": "医学影像-超声影像",
+        "parent_id": "GNR.14",
+        "parent_slug": "medimg",
+        "form_l2": "超声影像"
+      },
+      "其他医学影像": {
+        "id": "GNR.14.04",
+        "label": "医学影像-其他医学影像",
+        "parent_id": "GNR.14",
+        "parent_slug": "medimg",
+        "form_l2": "其他医学影像"
+      },
+      "热成像图": {
+        "id": "GNR.15.01",
+        "label": "仪器成像-热成像图",
+        "parent_id": "GNR.15",
+        "parent_slug": "instrument",
+        "form_l2": "热成像图"
+      },
+      "卫星遥感图": {
+        "id": "GNR.15.03",
+        "label": "仪器成像-卫星遥感图",
+        "parent_id": "GNR.15",
+        "parent_slug": "instrument",
+        "form_l2": "卫星遥感图"
+      },
+      "天文观测图": {
+        "id": "GNR.15.04",
+        "label": "仪器成像-天文观测图",
+        "parent_id": "GNR.15",
+        "parent_slug": "instrument",
+        "form_l2": "天文观测图"
+      },
+      "其他仪器成像": {
+        "id": "GNR.15.05",
+        "label": "仪器成像-其他仪器成像",
+        "parent_id": "GNR.15",
+        "parent_slug": "instrument",
+        "form_l2": "其他仪器成像"
+      }
+    },
+    "direct_l2_to_null": {
+      "table": {
+        "parent_id": "GNR.06",
+        "parent_slug": "table",
+        "form_l2": null,
+        "leaf_id": "GNR.06",
+        "leaf_label": "表格"
+      },
+      "code": {
+        "parent_id": "GNR.09",
+        "parent_slug": "code",
+        "form_l2": null,
+        "leaf_id": "GNR.09",
+        "leaf_label": "源代码"
+      },
+      "geometry": {
+        "parent_id": "GNR.12",
+        "parent_slug": "geometry",
+        "form_l2": null,
+        "leaf_id": "GNR.12",
+        "leaf_label": "几何图形"
+      },
+      "poster": {
+        "parent_id": "GNR.16",
+        "parent_slug": "poster",
+        "form_l2": null,
+        "leaf_id": "GNR.16",
+        "leaf_label": "海报、封面与广告"
+      },
+      "infographic": {
+        "parent_id": "GNR.17",
+        "parent_slug": "infographic",
+        "form_l2": null,
+        "leaf_id": "GNR.17",
+        "leaf_label": "信息图"
+      },
+      "meme": {
+        "parent_id": "GNR.18",
+        "parent_slug": "meme",
+        "form_l2": null,
+        "leaf_id": "GNR.18",
+        "leaf_label": "表情包与梗图"
+      },
+      "comic": {
+        "parent_id": "GNR.19",
+        "parent_slug": "comic",
+        "form_l2": null,
+        "leaf_id": "GNR.19",
+        "leaf_label": "漫画"
+      },
+      "sheetmusic": {
+        "parent_id": "GNR.20",
+        "parent_slug": "sheetmusic",
+        "form_l2": null,
+        "leaf_id": "GNR.20",
+        "leaf_label": "乐谱"
+      },
+      "blueprint": {
+        "parent_id": "GNR.21",
+        "parent_slug": "blueprint",
+        "form_l2": null,
+        "leaf_id": "GNR.21",
+        "leaf_label": "工程图纸"
+      },
+      "other": {
+        "parent_id": "GNR.22",
+        "parent_slug": "other",
+        "form_l2": null,
+        "leaf_id": "GNR.22",
+        "leaf_label": "其他"
+      }
+    },
+    "inactive_taxonomy_labels": []
+  },
+  "media": [
+    {
+      "id": "MED.01",
+      "slug": "native",
+      "label": "原生数字",
+      "definition": "画面清晰、足以判断,且不带翻拍或截屏痕迹的原生数字文件。与 unknown 的区别是「看清了,没有痕迹」,不是「看不清」。不需要写 medium_evidence。 例:matplotlib 导出的图表、矢量插画、PDF 里裁出的插图、渲染输出文件"
+    },
+    {
+      "id": "MED.02",
+      "slug": "screenshot",
+      "label": "屏幕截取",
+      "definition": "设备内部截屏或录屏帧,无物理翻拍痕迹。 证据:状态栏、窗口边框、标签栏、系统 UI chrome、光标、录屏压缩块效应。 例:网页截图、聊天记录截图、IDE 截图"
+    },
+    {
+      "id": "MED.03",
+      "slug": "scan",
+      "label": "扫描",
+      "definition": "平板扫描仪或手机扫描 App 的正射输出。判定从严 —— 需要正射无畸变、照明均匀、背景纯色三者齐备,缺任一项归 rephoto。 证据:正射无透视畸变、边缘平直、照明均匀无阴影梯度、纯白或纯黑背景、扫描线噪声或条纹。 例:扫描的试卷、扫描件 PDF 里裁出的页、扫描 App 矫正增强后的输出"
+    },
+    {
+      "id": "MED.04",
+      "slug": "rephoto",
+      "label": "翻拍",
+      "definition": "用相机或手机拍摄纸张、书页、黑板、屏幕、展板等实体平面。有实体载体证据但不满足 scan 严格条件的,一律归此类。 证据:透视畸变或梯形、页面弯曲、书脊阴影或手影、光照不均、环境背景、反光高光、莫尔纹。 例:手机拍教材上的图表、拍白板、翻拍手绘草图、拍摄屏幕"
+    },
+    {
+      "id": "MED.05",
+      "slug": "unknown",
+      "label": "无法判断",
+      "definition": "画面质量不足以支撑判断:裁切过度、分辨率过低、模糊或噪声淹没了载体线索。判据是「看不清」,而不是「看清了没有痕迹」—— 后者是 native。"
+    }
+  ],
+  "attributes": [
+    {
+      "id": "ATTR.MULTIPANEL",
+      "field": "is_multipanel",
+      "label": "拼接",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "ATTR.HANDMADE",
+      "field": "is_handmade",
+      "label": "手绘",
+      "values": [
+        false,
+        true
+      ]
+    }
+  ]
+}

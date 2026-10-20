@@ -1,0 +1,18 @@
+Please solve the following problem.
+
+
+Problem:
+
+{{question}}
+
+
+Select the most appropriate reasoning pattern from:
+
+R1 Direct Reasoning
+R2 Decomposition
+R3 Option Elimination
+R4 Solve → Verify
+R5 Explore → Solve
+
+
+Then solve the problem using the selected reasoning pattern.

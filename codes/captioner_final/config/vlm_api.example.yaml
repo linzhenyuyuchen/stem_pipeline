@@ -1,0 +1,4 @@
+# OpenAI-compatible Gemini/VLM endpoint. Copy this file to vlm_api.yaml.
+VLM_API_BASE: "https://your-endpoint.example.com/v1"
+VLM_API_KEY: "replace-with-your-api-key"
+VLM_MODEL: "gemini-3-flash-preview"

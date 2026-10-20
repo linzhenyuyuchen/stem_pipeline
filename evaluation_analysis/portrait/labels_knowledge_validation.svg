@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="500" viewBox="0 0 1400 500">
+<style>text{font-family:Arial,sans-serif;fill:#27313a}.title{font-size:18px;font-weight:700}.label{font-size:12px}.value{font-size:12px;font-weight:700}.note{font-size:14px}</style>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="30" y="35" font-size="24" font-weight="700">MMMU-Pro labels_knowledge.parquet — validation</text>
+<text x="30" y="64" class="note">Confirmed: 3,386/3,460 rows updated; 74 intentionally unmatched; paired labels identical.</text>
+<text x="55" y="110" class="title">Updated rows by view</text>
+<rect x="80" y="135" width="150" height="250.0" fill="#3568a8"/>
+<rect x="290" y="135" width="150" height="250.0" fill="#d18b32"/>
+<text x="115" y="405" class="label">10opts</text><text x="330" y="405" class="label">vision</text>
+<text x="130" y="125" class="value">1,693</text><text x="340" y="125" class="value">1,693</text>
+<text x="510" y="110" class="title">Primary label distribution</text>
+<text x="510" y="146" class="label">humanities_and_social_science</text>
+<rect x="675" y="134" width="95.1" height="16" fill="#3568a8"/>
+<text x="775.1195219123506" y="146" class="value">191</text>
+<text x="510" y="174" class="label">business</text>
+<rect x="675" y="162" width="105.6" height="16" fill="#3568a8"/>
+<text x="785.5776892430279" y="174" class="value">212</text>
+<text x="510" y="202" class="label">art_and_design</text>
+<rect x="675" y="190" width="108.1" height="16" fill="#3568a8"/>
+<text x="788.0677290836653" y="202" class="value">217</text>
+<text x="510" y="230" class="label">health_and_medicine</text>
+<rect x="675" y="218" width="121.5" height="16" fill="#3568a8"/>
+<text x="801.5139442231076" y="230" class="value">244</text>
+<text x="510" y="258" class="label">tech_and_engineering</text>
+<rect x="675" y="246" width="162.8" height="16" fill="#3568a8"/>
+<text x="842.8486055776892" y="258" class="value">327</text>
+<text x="510" y="286" class="label">science</text>
+<rect x="675" y="274" width="250.0" height="16" fill="#3568a8"/>
+<text x="930.0" y="286" class="value">502</text>
+<text x="950" y="110" class="title">Top course mentions</text>
+<text x="950" y="146" class="label">组织学与胚胎学</text>
+<rect x="1115" y="134" width="145.6" height="16" fill="#6e8f55"/>
+<text x="1265.6043956043957" y="146" class="value">53</text>
+<text x="950" y="174" class="label">艺术概论</text>
+<rect x="1115" y="162" width="151.1" height="16" fill="#6e8f55"/>
+<text x="1271.098901098901" y="174" class="value">55</text>
+<text x="950" y="202" class="label">投资学</text>
+<rect x="1115" y="190" width="153.8" height="16" fill="#6e8f55"/>
+<text x="1273.8461538461538" y="202" class="value">56</text>
+<text x="950" y="230" class="label">材料力学</text>
+<rect x="1115" y="218" width="167.6" height="16" fill="#6e8f55"/>
+<text x="1287.5824175824175" y="230" class="value">61</text>
+<text x="950" y="258" class="label">艺术鉴赏</text>
+<rect x="1115" y="246" width="178.6" height="16" fill="#6e8f55"/>
+<text x="1298.5714285714287" y="258" class="value">65</text>
+<text x="950" y="286" class="label">大学物理</text>
+<rect x="1115" y="274" width="181.3" height="16" fill="#6e8f55"/>
+<text x="1301.3186813186812" y="286" class="value">66</text>
+<text x="950" y="314" class="label">工程力学</text>
+<rect x="1115" y="302" width="184.1" height="16" fill="#6e8f55"/>
+<text x="1304.065934065934" y="314" class="value">67</text>
+<text x="950" y="342" class="label">病理学</text>
+<rect x="1115" y="330" width="222.5" height="16" fill="#6e8f55"/>
+<text x="1342.5274725274726" y="342" class="value">81</text>
+<text x="950" y="370" class="label">概率论与数理统计</text>
+<rect x="1115" y="358" width="233.5" height="16" fill="#6e8f55"/>
+<text x="1353.5164835164835" y="370" class="value">85</text>
+<text x="950" y="398" class="label">西方美术史</text>
+<rect x="1115" y="386" width="250.0" height="16" fill="#6e8f55"/>
+<text x="1370.0" y="398" class="value">91</text>
+</svg>

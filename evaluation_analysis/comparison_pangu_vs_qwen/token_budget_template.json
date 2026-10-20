@@ -1,0 +1,23 @@
+{
+  "target_tokens": null,
+  "datasets": [
+    {
+      "config_key": "STEM_data_purchase_caption_caption_v3d1_360k",
+      "total_tokens": null,
+      "weight_rank": null,
+      "weight_dataset": ""
+    },
+    {
+      "config_key": "STEM_QA_27M_weakness_caption_v3d1_100k",
+      "total_tokens": null,
+      "weight_rank": null,
+      "weight_dataset": ""
+    },
+    {
+      "config_key": "STEM_Caption_21M_weakness_caption_v3d1_180k",
+      "total_tokens": null,
+      "weight_rank": null,
+      "weight_dataset": ""
+    }
+  ]
+}
